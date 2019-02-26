@@ -61,3 +61,17 @@ def about():
     """About page."""
     form = LoginForm(request.form)
     return render_template('public/about.html', form=form)
+
+
+@blueprint.route('/blog/')
+def blog():
+    """Blog page."""
+    form = LoginForm(request.form)
+    return render_template('public/blog.html', form=form)
+
+
+@blueprint.route('/misc/')
+def misc():
+    """Misc page."""
+    form = LoginForm(request.form)
+    return render_template('public/misc.html', form=form)
